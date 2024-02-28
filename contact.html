@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <section class="header">
+      <nav class="navbar py-3 navbar-expand-md navbar-light">
+        <div class="container">
+          <a href="#">
+            <img
+              class="navbar-brand d-inline-block align-top"
+              src="assets/image/logo.png"
+              alt="logo"
+            />
+          </a>
+          <!-- toggle button -->
+          <div class="d-flex d-md-none align-items-center">
+            <a class="fw-bold nav-link carts" href="cart.html">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <small class="fw-bold cart-number">0</small>
+            </a>
+
+            <button
+            class="custom-toggler d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu"
+            aria-controls="navbarNav"
+            aria-expands="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="fa-solid fa-outdent"></i>
+          </button>
+        </div>
+          <div
+            class="collapse navbar-collapse justify-content-end align-center"
+          >
+            <ul class="navbar-nav" id="navbar">
+              <li class="nav-item active">
+                <a class="fw-bold nav-link" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item active">
+                <a class="fw-bold nav-link" href="shop.html"> Shop </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link fw-bold" href="blog.html"> Blog </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link fw-bold" href="about.html"> About </a>
+              </li>
+              <li class="nav-item active">
+                <a class="active nav-link fw-bold" href="contact.html"> Contact </a>
+              </li>
+              <li class="nav-item active">
+                <a class="fw-bold carts nav-link" href="cart.html">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <small class="fw-bold shop-num cart-number">0</small>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- offcanvas toggler -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+      <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title"></h5> -->
+          <!-- Add a close button if needed -->
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" id="close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="navbar-nav" id="navbar">
+            <li class="nav-item active">
+              <a class="fw-bold nav-link" href="index.html"> Home </a>
+            </li>
+            <li class="nav-item active">
+              <a class="fw-bold nav-link" href="shop.html"> Shop </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link fw-bold" href="blog.html"> Blog </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link fw-bold" href="about.html"> About </a>
+            </li>
+            <li class="nav-item active">
+              <a class="active nav-link fw-bold" href="contact.html"> Contact </a>
+            </li>
+          </ul>
+      </div>
+  </div>
+
+  <section id="contact-header">
+    <div class="container" data-aos-duration="2000" data-aos="zoom-in">
+      <h2 class="fw-bold">#Lets_talk</h2>
+      <p>LEAVE A MESSAGE. We love to hear from you</p>
+    </div>
+  </section>
+  <section class="mt-5" id="contact-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6" data-aos-duration="2000" data-aos="zoom-in">
+               <div class="details">
+                <span>GET IN TOUCH</span>
+                <h2 class="fw-bold">Visit one of our agency locations or contact us today</h2>
+                <h3 class="fw-bold">Head Office</h3>
+                <div>
+                    <li class="d-flex">
+                        <i class="fa-regular fa-map"></i>
+                        <p>House 4 Road 2H, Unity Estate Omu-Arire Mowe Ogun State</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>oyegunleemmanuel39@gmail.com</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+234-708-563-6532</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday to Saturday: 9:00am to 16:00pm</p>
+                    </li>
+
+                </div>
+
+               </div>
+           </div>
+           <div class="col-sm-12 col-md-6" data-aos-duration="2000" data-aos="fade-up">
+            <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15846.72509300895!2d3.4264203486859475!3d6.808569697512626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc0b91a29fa81%3A0xe92e570709273423!2sMowe%20110113%2C%20Loburo%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1699834924283!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+
+
+        </div>
+
+    </div>
+
+  </section>
+
+  <section>
+    <div class="container" data-aos-duration="2000" data-aos="zoom-in">
+      <div class="container mt-5 p-5" id="form-details">
+        <div class="row">        
+          <div class="col-sm-12 col-lg-7 col-md-6">
+            <form action="">
+              <span class="fw-bold">LEAVE A MESSAGE</span>
+              <h2 class="py-3">We love to hear from you.</h2>
+              <input class="form-control custom-input" type="text" placeholder="Your Name" required>
+              <input class="form-control custom-input" type="email" placeholder="E-mail" required>
+              <input class="form-control custom-input" type="text" placeholder="Subject" required>
+              <textarea class="form-control custom-input" name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn-md">Submit</button>            
+            </form>
+          </div>
+          <div class="col-sm-12 col-lg-5 col-md-6 people p-lg-5 mt-4">
+            <div class="manager d-flex">
+              <img class="img-fluid" src="./assets/people/1.png" alt="person1">
+              <p><span class="fw-bold">Joe Doe</span><br>Senior Marketing Manger <br> Phone: +234-708-563-6532 <br>Email: contact@example.com</p>
+              
+            </div>
+            <div class="manager d-flex">
+              <img class="img-fluid" src="./assets/people/2.png" alt="person1">
+              <p><span class="fw-bold">William Smith</span><br>Senior Marketing Manger <br> Phone: +234-708-563-6532 <br>Email: contact@example.com</p>
+              
+            </div>
+            <div class="manager d-flex">
+              <img class="img-fluid" src="./assets/people/3.png" alt="person1">
+              <p><span class="fw-bold">Emma Stone</span><br>Senior Marketing Manger <br> Phone: +234-708-563-6532 <br>Email: contact@example.com</p>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </section>
+  
+
+
+    <section class="mt-4" id="newsletter">
+      <div class="container pt-5" data-aos-duration="2000" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-7">
+            <h4>Sign Up For Newsletters</h4>
+            <p class="fw-bold">Get E-mail updates about our latest shop and <span style="color: #ffbd27;">special offers</span></p>
+          </div>
+          <div class="col-md-5">
+            <form class="form-inline d-flex">
+                <div class="w-100 form-group">
+                <input class="" type="email" placeholder="Your email address">
+                </div>
+                <button class="fw-bold" type="submit">Sign Up</button>
+              </form>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+   
+        
+
+    </section>
+
+    <section class="mt-5" id="footer">
+      <div class="container" data-aos-duration="2000" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="logo" src="assets/image/logo.png" alt="logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> House 4 Road 2H Omu-Arire Mowe Ogun State</p>
+            <p><strong>Phone</strong> +234-708-563-6532</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+              <h4>Follow us</h4>
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+
+              </div><br>
+
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <h4>About</h4>
+            <p>About</p>
+            <p>Delivery Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Contact Us</p>
+
+          </div>
+          <div class="col-md-3">
+            <h4>My Account</h4>
+            <p>Sign In</p>
+            <p>View Cart</p>
+            <p>Privacy Policy</p>
+            <p>My Wishlist</p>
+            <p>Track My Order</p>
+            <p>Help</p>
+          </div>
+          <div class="col-md-3 install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Store</p>
+            <div class="app w-50 d-md-flex">
+                <img class="img-fluid" src="assets/pay/app.jpg" alt="appstore">
+                <img class="img-fluid" src="assets/pay/play.jpg" alt="playstore">
+            </div>
+            <p>Secured Payment Gatways</p>
+            <div class="pay">
+                <!-- <img src="assets/pay/flutterwave.png" alt="flutterwave"> -->
+                <img class="img-fluid" src="assets/pay/pay.png" alt="pay">
+            </div>
+           
+          </div>
+          <div>
+            <p class="text-center py-5">© Emmanuel | Ecommerce Website</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    
+    <script src="product.js"></script>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init();
+   </script>
+  </body>
+</html>

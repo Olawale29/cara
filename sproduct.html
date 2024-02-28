@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sproduct Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <section class="header">
+      <nav class="navbar py-3 navbar-expand-md navbar-light">
+        <div class="container">
+          <a href="#">
+            <img
+              class="navbar-brand d-inline-block align-top"
+              src="assets/image/logo.png"
+              alt="logo"
+            />
+          </a>
+          <!-- toggle button -->
+          <div class="d-flex d-md-none align-items-center">
+            <a class="fw-bold nav-link" href="cart.html">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+
+            <button
+            class="custom-toggler d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu"
+            aria-controls="navbarNav"
+            aria-expands="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="fa-solid fa-outdent"></i>
+          </button>
+        </div>
+          <div
+            class="collapse navbar-collapse justify-content-end align-center"
+          >
+            <ul class="navbar-nav" id="navbar">
+              <li class="nav-item active">
+                <a class="fw-bold nav-link" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item active">
+                <a class="active fw-bold nav-link" href="shop.html"> Shop </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link fw-bold" href="blog.html"> Blog </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link fw-bold" href="about.html"> About </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link fw-bold" href="contact.html"> Contact </a>
+              </li>
+              <li class="nav-item active">
+                <a class="fw-bold nav-link" href="cart.html">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- offcanvas toggler -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+      <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title"></h5> -->
+          <!-- Add a close button if needed -->
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" id="close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="navbar-nav" id="navbar">
+            <li class="nav-item active">
+              <a class="active fw-bold nav-link" href="index.html"> Home </a>
+            </li>
+            <li class="nav-item active">
+              <a class="active fw-bold nav-link" href="shop.html"> Shop </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link fw-bold" href="blog.html"> Blog </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link fw-bold" href="about.html"> About </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link fw-bold" href="contact.html"> Contact </a>
+            </li>
+            <!-- <li class="nav-item active">
+              <a class="fw-bold nav-link" href="#">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </li> -->
+          </ul>
+      </div>
+  </div>
+  <section id="prodetails" class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="single-pro-image">
+                    <img class="img-fluid" id="mainimg" src="assets/products/f1.jpg" alt="">
+                    <div class="col-md-12">
+                        <div class="row mt-2 gx-2">
+                            <div class="col-3 small-img">
+                                <img class="img-fluid" src="assets/products/f1.jpg" alt="">
+                            </div>
+                            <div class="col-3 small-img">
+                                <img class="img-fluid" src="assets/products/f2.jpg" alt="">
+                            </div>
+                            <div class="col-3 small-img">
+                                <img class="img-fluid" src="assets/products/f3.jpg" alt="">
+                            </div>
+                            <div class="col-3 small-img">
+                                <img class="img-fluid" src="assets/products/f4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                </div>
+
+            </div>
+            <div class="single-pro-details col-md-6 py-5">
+                <h6 class="fw-bold">Home/T-shirt</h6>
+                <h4 class="fw-bold men">Men's Fashion T-shirt</h4>
+                <h2 class="fw-bold">$74.00</h2>
+                <select class="mx-1">
+                    <option>Select Size</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>XXXL</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                </select>
+                <input class="mx-1 text-center" type="number" value="1">
+                <button class="btn">Add To Cart</button>
+                <h4 class="fw-bold mt-5">Product Details</h4>
+                <span class="text-justify">The Classic Cotton T-Shirt is a versatile wardrobe staple made from premium quality 100% combed ringspun cotton, providing a soft and comfortable feel. It features a classic fit with reinforced stitching for durability. This t-shirt is available in various classic and trendy colors, suitable for a wide range of occasions, and is easy to care for. With a range of sizes from Small to XXX-Large, it offers a perfect fit for everyone. Elevate your style with this timeless, comfortable, and reliable t-shirt, suitable for casual wear, going out, or lounging at home.</span>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+  </section>
+  <section class="feature-product mt-5">
+    <div class="container" id="product">
+      <div class="text-center">
+        <h2 class="h2-text fw-bold py-2">Featured Product</h2>
+        <p class="p-text">
+          Summer Collection New Modern
+          <span class="d-block d-sm-inline">Design</span>
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card pro">
+            <img
+              class="product-image"
+              src="assets/products/n1.jpg"
+              alt="product1"
+            />
+            <div class="card-body des">
+              <h6 class="card-title">Adidas</h6>
+              <p class="fw-bold card-text">Cartoon Astronaut T-shirts</p>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div
+                class="amount-cart d-flex justify-content-between align-center"
+              >
+                <h4>$74</h4>
+                <a class="cart" href="#"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card pro">
+            <img
+              class="product-image"
+              src="assets/products/n2.jpg"
+              alt="product1"
+            />
+            <div class="card-body des">
+              <h6 class="card-title">Adidas</h6>
+              <p class="fw-bold card-text">Cartoon Astronaut T-shirts</p>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div
+                class="amount-cart d-flex justify-content-between align-center"
+              >
+                <h4>$74</h4>
+                <a class="cart" href="#"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card pro">
+            <img
+              class="product-image"
+              src="assets/products/n3.jpg"
+              alt="product1"
+            />
+            <div class="card-body des">
+              <h6 class="card-title">Adidas</h6>
+              <p class="fw-bold card-text">Cartoon Astronaut T-shirts</p>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div
+                class="amount-cart d-flex justify-content-between align-center"
+              >
+                <h4>$74</h4>
+                <a class="cart" href="#"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card pro">
+            <img
+              class="product-image"
+              src="assets/products/n4.jpg"
+              alt="product1"
+            />
+            <div class="card-body des">
+              <h6 class="card-title">Adidas</h6>
+              <p class="fw-bold card-text">Cartoon Astronaut T-shirts</p>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div
+                class="amount-cart d-flex justify-content-between align-center"
+              >
+                <h4>$74</h4>
+                <a class="cart" href="#"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="mt-5" id="newsletter">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-7">
+          <h4>Sign Up For Newsletters</h4>
+          <p class="fw-bold">Get E-mail updates about our latest shop and <span style="color: #ffbd27;">special offers</span></p>
+        </div>
+        <div class="col-md-5">
+          <form class="form-inline d-flex">
+              <div class="w-100 form-group">
+              <input class="" type="email" placeholder="Your email address">
+              </div>
+              <button class="fw-bold" type="submit">Sign Up</button>
+            </form>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+ 
+      
+
+  </section>
+
+  <section class="mt-5" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="logo" src="assets/image/logo.png" alt="logo">
+          <h4>Contact</h4>
+          <p><strong>Address:</strong> House 4 Road 2H Omu-Arire Mowe Ogun State</p>
+          <p><strong>Phone</strong> +234-708-563-6532</p>
+          <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-pinterest-p"></i>
+              <i class="fa-brands fa-youtube"></i>
+
+
+            </div><br>
+
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <h4>About</h4>
+          <p>About</p>
+          <p>Delivery Information</p>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+          <p>Contact Us</p>
+
+        </div>
+        <div class="col-md-3">
+          <h4>My Account</h4>
+          <p>Sign In</p>
+          <p>View Cart</p>
+          <p>Privacy Policy</p>
+          <p>My Wishlist</p>
+          <p>Track My Order</p>
+          <p>Help</p>
+        </div>
+        <div class="col-md-3 install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Store</p>
+          <div class="app w-50 d-md-flex">
+              <img class="img-fluid" src="assets/pay/app.jpg" alt="appstore">
+              <img class="img-fluid" src="assets/pay/play.jpg" alt="playstore">
+          </div>
+          <p>Secured Payment Gatways</p>
+          <div class="pay">
+              <!-- <img src="assets/pay/flutterwave.png" alt="flutterwave"> -->
+              <img class="img-fluid" src="assets/pay/pay.png" alt="pay">
+          </div>
+         
+        </div>
+        <div>
+          <p class="text-center py-5">© Emmanuel | Ecommerce Website</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+    
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
